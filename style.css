@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:#FEFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3AAFA9; 
+    padding: 0px 40px;
+    color:#FEFFFF;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    display: flex;         
+    flex-direction: row;
+    gap: 15px;
+}
+
+.navbar li h3{
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar li h3:hover {
+    color:#2B7A78;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+
+.icon-container {
+    background-color: #3AAFA9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-container:hover {
+    background-color:  #2B7A78;
+}
+
+.intro {
+    background-color: #DEF2F1; 
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.intro-text h4{
+    color: #2B7A78;
+    font-size:26px;
+}
+
+.intro-text h3{
+    font-size: 32px;
+    font-weight: 500; 
+}
+
+.intro-text p{
+    font-size: 20px;
+    text-align: left;
+}
+
+.profile-picture {
+    border-radius: 50%; 
+    width: 270px;
+    height: 270px;
+}
+
+
+
+
