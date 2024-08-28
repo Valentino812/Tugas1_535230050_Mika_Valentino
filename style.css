@@ -159,23 +159,69 @@ html, body {
 
 /* Contact Start */
 .contact {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    padding-bottom: 100px;
     background-color: #FEFFFF;
     margin: 20px auto;
     width: 85%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
-  
-/* Contact Start */
+
 .contact-title h3 {
     font-size: 32px;
     margin-bottom: 15px;
 }
+
+.contact-title a {
+    color: #666; 
+}
+
+.contact-title h4 {
+    color: #666; 
+}
   
 .contact-info {
     margin-top: 20px;
+}
+
+.contact-info ul {
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.contact-info li {
+    display: flex;
+    align-items:center;
+    margin: 10px 0; 
+    font-size: 18px; 
+}
+
+.contact-info a {
+    text-decoration: none; 
+    color: #0066cc; 
+    font-weight: 500; 
+}
+
+.contact-info a:hover {
+    color: #004080; 
+}
+
+.contact-icon {
+    width: 32px; 
+    height: 32px; 
+    margin-right: 5px;  
+}
+
+#email-icon {
+    width: 42px; 
+    height: 42px; 
+    margin-right: 0px;
 }
 /* Contact End */
 
@@ -183,6 +229,9 @@ html, body {
 .footer {
     margin: 0 auto;
     padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background-color: #17252A; 
     color: #FEFFFF; 
 }
