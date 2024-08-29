@@ -286,14 +286,25 @@ html, body {
 }
 
 .send-message {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 60px;
+    width: 60vw;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #DEF2F1;
 }
 
 .send-message h3{
     font-size: 36px;
     padding-bottom: 20px;
     color: #3AAFA9; 
+}
+
+#mail {
+    width: 70px;
+    height: 70px;
 }
 
 .contact-form {
@@ -375,6 +386,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 50px;
     gap: 32px;
 }
 
@@ -484,6 +496,7 @@ textarea {
     .send-message {
         padding-top: 40px;
         padding-bottom: 20px;
+        width: 80vw;
     }
 
     .contact-form {
@@ -540,6 +553,7 @@ textarea {
     .send-message {
         padding-top: 60px;
         padding-bottom: 30px;
+        width: 80vw;
     }
 
     .contact-form {
