@@ -18,6 +18,12 @@ html, body {
     background-color: #3AAFA9; 
     padding: 0px 40px;
     color:#FEFFFF;
+    position: relative; /* To position the menu button */
+}
+
+.navbar-menu {
+    display: flex; /* Display flex by default for non-mobile */
+    align-items: center;
 }
 
 .navbar ul {
@@ -25,6 +31,14 @@ html, body {
     display: flex;         
     flex-direction: row;
     gap: 15px;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal layout for non-mobile */
+    gap: 20px;
 }
 
 .navbar-menu li a {
@@ -40,6 +54,16 @@ html, body {
 
 .navbar li h3:hover {
     color:#2B7A78;
+}
+
+/* Menu Button for Mobile */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    background-color: transparent;
+    border: none;
+    color: #FEFFFF;
+    font-size: 24px;
+    cursor: pointer;
 }
 /* Navbar End */
 
@@ -433,6 +457,37 @@ textarea {
 
 /* Adjustments For Smartphone */
 @media only screen and (max-width: 600px) {
+    .navbar li h3:hover {
+        color: #3AAFA9; 
+    }
+
+    .navbar-menu, .social {
+        display: none; 
+        flex-direction: column;
+        align-items: left;
+        position: relative;
+        top: 60px; 
+        background-color: #2B7A78;
+        padding: 12px;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column; 
+        gap: 0px;
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+    .navbar.open .navbar-menu, .navbar.open .social {
+        display: flex; 
+    }
+
+    .icon-container:hover {
+        background-color:  #17252A;
+    }
+
     .intro {
         flex-direction: column;
         padding: 50px 30px;
