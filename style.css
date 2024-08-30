@@ -455,6 +455,47 @@ textarea {
 }
 /* Footer End */
 
+/* Entrance Animation Start */
+
+/* 1. Animation type: fade-in: */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Initial state */
+    animation: fadeIn 1s ease-out forwards;
+}
+
+
+/* 2. Animation type: slide-in: */
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+/* Entrance Animation End */
+
 /* Adjustments For Smartphone */
 @media only screen and (max-width: 600px) {
     .navbar li h3:hover {
